@@ -20,7 +20,6 @@ add_subdirectory("${PROJECT_SOURCE_DIR}/deps/glfw")
 
 # add libraries to compiler search path
 include_directories("${GLFW_SOURCE_DIR}/include")
-include_directories("${PROJECT_SOURCE_DIR}/deps/glew/include")
 
 if(APPLE)
     target_link_libraries(wave glfw ${GLFW_LIBRARIES})
